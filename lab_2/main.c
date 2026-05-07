@@ -84,6 +84,10 @@ double exec_sequential(long total_iter) {
 }
 
 int main(int argc, char *argv[]) {
+    if (argc < 3) {
+        fprintf(stderr, "Usage: %s <threads> <iterations>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
 
     int n_threads = atoi(argv[1]);
     long total_iter = atol(argv[2]);
