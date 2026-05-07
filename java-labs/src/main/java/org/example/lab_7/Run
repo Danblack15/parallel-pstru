@@ -1,0 +1,5 @@
+C:\Users\Daniil\Downloads\java8\bin\javac -cp "C:\libs\mappedbus.jar" -d out lab_7\*.java
+
+java -cp "out;C:\libs\mappedbus.jar" io.mappedbus.sample.object.ObjectReader
+
+java -cp "out;C:\libs\mappedbus.jar" io.mappedbus.sample.object.ObjectWriter 1
